@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{margin: 0; padding: 0;}
+body {font-family:Arial, "sans-serif"; line-height: 1.4;background-color:#000000;}	
+
+.social { position: fixed; right: 10px; top:50%; width: 50px; margin-top: -26px; }
+header {
+	background-color: #000000; 
+	height: auto;
+	text-align: center; 
+	}
+
+nav {background-color:#212121;
+	color:#FFFFFF;
+	height: auto; 
+	border-top: thin;
+	border-top-color: #FFFFFF;}
+
+nav ul {
+	justify-content: flex-start;
+	list-style-type: none;	z-index: 10;
+}
+nav ul li {
+	display: inline;}
+nav ul li a {color:#FFFFFF; padding: 12px; display: inline-block;text-decoration: none; }
+
+nav ul li a:hover { 
+	background-color:#FFFFFF;
+	color:#000000;	
+}
+/* para que la barra navegadora quede seccion abajo de seccion*/
+nav ul li ul {
+	position: absolute;
+	left: 0;
+	top: 20px;
+	}
+nav ul li:hover ul {
+	background-color: #BF0C0F;
+	color:#000000;
+	display: block;
+	position: absolute;
+	}
+
+nav ul li ul li{
+	align-items: flex-end;
+
+}
+.intro {
+	padding-top: 170px;
+}
+.intro p {
+	font-size: 24px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.francia {
+	background-image: url(../img/portadita.jpg);
+	background-repeat: no-repeat; 
+ 	background-position: center-center;
+ 	background-size: cover;
+ 	height: 600px;
+}
+.info {
+	display: flex; 
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+.box { 
+		width: 28%; 
+		margin: 1% 2.3% 2% 1%; /*box-shadow: 2px 2px 20px #000;*/ 
+		padding: 10px; 
+		/*box-sizing: border-box; border-radius: 10px 10px 0;*/
+ 		background-color: #000; color: #FFFFFF;
+ 		text-align: center;}
+.box p  { 
+}
+.box h2, h3 { 
+}
+.box h2 { 
+		color: #000000;
+		background-color: #FFFFFF;
+		box-sizing: border-box; border-radius: 10px 10px 0;
+}
+.box h3 { 
+		color: yellow;
+}
+.box img { 
+}
+
+#special{ 
+		display: flex;
+		flex-direction: column;
+}
+#special img{ 
+		margin-top: 30px;
+}
+#special h1, #personajes h1{ 
+		margin-top: 10px;
+		color: #FFFFFF;
+		text-align: center;
+}
+#special h2{ 
+		margin-top: 25px;
+		color: yellow;
+		text-align: center;
+}
+#special p, #personajes p{ 
+		margin-top: 10px;
+		margin-bottom: 20px;
+		color: #FFFFFF;
+		text-align: center;
+}
+
+#personajes {
+	display: flex; 
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+#personajes h1 {
+	color: yellow;
+}
+.actores{
+	align-content: space-around;
+	/background-color: #edeeee;/
+	width: 300px; height: 400px;
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-top: 50px;
+   	display: flex;
+   	 align-items: center;
+  	justify-content: center;
+   	position: relative;
+
+}
+section h1{
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 20px;
+}
+.actores img {
+	transition-duration:1.5s;
+	transition-property: opacity;
+	transition-delay: 0s;
+}
+
+.actores h2, .actores p {
+	display: none;
+	position: absolute;
+	text-align: center;
+	opacity: 0;
+	transition-duration:1.5s;
+	transition-delay: 0s;
+	transition-property: opacity;
+
+}
+.actores:hover p { display:block; opacity: 0.8;}
+.actores:hover img {opacity: 0.2;}
+/*.actores:hover h2 {opacity: 0.8;}*/
+.sug h1{
+	color: yellow;
+}
+#form1 {
+	font-size: 15px;
+	width: 40%;
+	padding-left: 37px;
+	box-sizing: border-box;
+	color: #FFFFFF;
+}
+footer {
+	padding: 15px;
+	text-align: center;
+	background-color: #212121;
+	color:#FFFFFF;
+
+}
