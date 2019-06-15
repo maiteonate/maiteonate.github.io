@@ -54,6 +54,17 @@ nav ul li ul li{
 	text-align: center;
 	color: #FFFFFF;
 }
+section .textop{ 
+	color:#FFFFFF;
+	background-color: #000000;
+	text-align: center;
+	font-size: 18px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding: 10px;
+	}
 .francia {
 	background-image: url(../img/portadita.jpg);
 	background-repeat: no-repeat; 

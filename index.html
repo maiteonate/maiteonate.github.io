@@ -18,13 +18,59 @@
     </ul>
 </nav>
 <section class="francia">
-    <div class="intro">
-       <p> En este sitio encontrarás todo </p>
-       <p>sobre cómo fue hecha la película </p>
-       <p> Un Long Diamanche de Fiançailles </p>
-       <p>por JEAN PIERRE JEUNET </p>
-       <p>(el tipo a su derecha).</p>
-    </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+  .slider-container { width: 100%; position: relative; }
+  .slider-container .mySlides, .slider-container img.mySlides { width: 100%;}
+  .slider-container .left, .slider-container .right { position: absolute; top: 50%; left: 0; padding: 20px 10px; background-color: #FF6E00; color: #FFF; border: none; font-size: 30px; }
+  .slider-container .right { right: 0; left: inherit;}
+</style>
+<body>
+<div class="slider-container">
+  <img class="mySlides" src="img/portadita.jpg" alt="Sitio">
+  <img class="mySlides" src="img/081.jpg" alt="Special Features">
+  <img class="mySlides" src="img/231.jpg" alt="Montaje">
+  <img class="mySlides" src="imt/act.jpg" alt="Actores">
+  <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="right" onclick="plusDivs(1)">&#10095;</button>
+  
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+  
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
+}
+</script>
+ 
+    
     <div class="social">
   <a href="https://www.facebook.com/Un-long-dimanche-de-fian%C3%A7ailles-112753832132751/"><img src="img/facebook.png" width="50" height="50" alt=""/></a>
   <a href="https://www.youtube.com/watch?v=rOg1KhTR4u0&t=28s"><img src="img/youtube.png" width="50" height="50" alt=""/> </a>
