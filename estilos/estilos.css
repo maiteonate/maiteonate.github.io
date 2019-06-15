@@ -18,7 +18,7 @@ nav {background-color:#212121;
 	border-top-color: #FFFFFF;}
 
 nav ul {
-	justify-content: flex-start;
+	text-align: center;
 	list-style-type: none;	z-index: 10;
 }
 nav ul li {
@@ -26,25 +26,8 @@ nav ul li {
 nav ul li a {color:#FFFFFF; padding: 12px; display: inline-block;text-decoration: none; }
 
 nav ul li a:hover { 
-	background-color:#FFFFFF;
+	background-color:yellow;
 	color:#000000;	
-}
-/* para que la barra navegadora quede seccion abajo de seccion*/
-nav ul li ul {
-	position: absolute;
-	left: 0;
-	top: 20px;
-	}
-nav ul li:hover ul {
-	background-color: #BF0C0F;
-	color:#000000;
-	display: block;
-	position: absolute;
-	}
-
-nav ul li ul li{
-	align-items: flex-end;
-
 }
 .intro {
 	padding-top: 170px;
@@ -176,11 +159,13 @@ section h1{
 	color: yellow;
 }
 #form1 {
-	font-size: 15px;
-	width: 40%;
+	font-size: 16px;
+	width: 70%;
 	padding-left: 37px;
 	box-sizing: border-box;
 	color: #FFFFFF;
+	margin: 10%;
+
 }
 footer {
 	padding: 15px;

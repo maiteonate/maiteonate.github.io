@@ -30,7 +30,7 @@
   <img class="mySlides" src="img/portadita.jpg" alt="Sitio">
   <img class="mySlides" src="img/081.jpg" alt="Special Features">
   <img class="mySlides" src="img/231.jpg" alt="Montaje">
-  <img class="mySlides" src="imt/act.jpg" alt="Actores">
+  <img class="mySlides" src="img/act.jpg" alt="Actores">
   <button class="left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="right" onclick="plusDivs(1)">&#10095;</button>
   
@@ -69,7 +69,41 @@ function carousel() {
     setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
 }
 </script>
+  <form id="form1" name="form1" method="post" action="enviar.html">
+      <fieldset>
+        <p>
+          <label for="nombre2">Nombre y Apellido:</label>
+          <input type="text" name="nombre" id="nombre" required placeholder="Nombre y apellido"/>
+        </p>
+        <p><label for="email">Email:</label>
+          <input type="email" name="email" id="email" required placeholder="email"/>
+        </p>
+        <p><label>G&eacute;nero:</label> 
+      <input type="radio" name="sexo" value="1" id="sexo_0" /> Femenino <input type="radio" name="sexo" value="1" id="sexo_0" /> Masculino </p>
+        <p>
+      <label>Recibir información: </label>
+      <input type="checkbox" name="Preferencia1" value="m" id="preferencia1">
+      <label for="libros">Sí</label>
+      <input type="checkbox" name="Preferencia2" value="m" id="preferencia2">
+      <label for="peliculas">No</label>
+        <p>
+          <label for="pais">Pa&iacute;s:</label>
+          <select name="pais" required id="pais">
+            <option value="-1" selected>Seleccionar pa&iacute;s</option>
+            <option value="ARG">Argentina</option>
+            <option value="BRA">Brasil</option>
+            <option value="CHI">Chile</option>
+            <option value="COL">Colombia</option>
+            <option value="ECU">Ecuador</option>
+            <option value="PER">Per&uacute;</option>
+          </select></br>
  
+          <label for="comentarios">Comentarios:</label></br> 
+          <textarea name="comentarios" rows="7" id="comentarios"></textarea>
+      </p>
+        <p>&nbsp;</p> <input type="submit"></fieldset>
+       
+      </form>
     
     <div class="social">
   <a href="https://www.facebook.com/Un-long-dimanche-de-fian%C3%A7ailles-112753832132751/"><img src="img/facebook.png" width="50" height="50" alt=""/></a>
