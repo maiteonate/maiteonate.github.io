@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Un long dimanche de fiancailles</title>
+
+<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 <link href="estilos/estilos.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -66,7 +70,7 @@ function carousel() {
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1} 
     x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
+    setTimeout(carousel, 4000); // Cambia la imagen cada 4 segundos
 }
 </script>
   <form id="form1" name="form1" method="post" action="enviar.html">
