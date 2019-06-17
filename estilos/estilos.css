@@ -1,6 +1,17 @@
 @charset "UTF-8";
 /* CSS Document */
-
+@keyframes tuba {
+		0% {transform: translate(-1200px);}
+		100% {transform: translate(1200px);}
+}
+@keyframes tubon {
+		0% {transform: translate(1200px);}
+		100% {transform: translate(-1200px);}
+}
+@keyframes quand {
+		0% {opacity: 0;}
+		100% {opacity: 1;}
+}
 *{margin: 0; padding: 0;}
 body {font-family:Arial, "sans-serif"; line-height: 1.4;background-color:#000000;}	
 
@@ -56,27 +67,79 @@ section .textop{
 	margin-top: 10px;
 	margin-bottom: 50px;
 }
-.box { 
+.box1 { 
 		width: 28%; 
 		margin: 1% 2.3% 2% 1%; /*box-shadow: 2px 2px 20px #000;*/ 
 		padding: 10px; 
 		/*box-sizing: border-box; border-radius: 10px 10px 0;*/
- 		background-color: #000; color: #FFFFFF;
- 		text-align: center;}
-.box p  { 
-}
-.box h2, h3 { 
-}
-.box h2 { 
-		color: #000000;
-		background-color: #FFFFFF;
-		box-sizing: border-box; border-radius: 10px 10px 0;
-}
-.box h3 { 
-		color: yellow;
-}
-.box img { 
-}
+ 		background-color: grey; color: #FFFFFF;
+ 		text-align: center;
+ 		animation: quand;
+		animation-delay: 0s;
+		animation-duration: 4s;
+		background-position: 360px;
+ 		}
+ .box2 { 
+		width: 28%; 
+		margin: 1% 2.3% 2% 1%; /*box-shadow: 2px 2px 20px #000;*/ 
+		padding: 10px; 
+		/*box-sizing: border-box; border-radius: 10px 10px 0;*/
+ 		background-color: grey; color: #FFFFFF;
+ 		text-align: center;
+ 		animation: quand;
+		animation-delay: 2s;
+		animation-duration: 4s;
+		background-position: 360px;
+ 		}
+ .box3 { 
+		width: 28%; 
+		margin: 1% 2.3% 2% 1%; /*box-shadow: 2px 2px 20px #000;*/ 
+		padding: 10px; 
+		/*box-sizing: border-box; border-radius: 10px 10px 0;*/
+ 		background-color: grey; color: #FFFFFF;
+ 		text-align: center;
+ 		animation: quand;
+		animation-delay: 4s;
+		animation-duration: 4s;
+		background-position: 360px;
+ 		}
+ .box4 { 
+		width: 28%; 
+		margin: 1% 2.3% 2% 1%; /*box-shadow: 2px 2px 20px #000;*/ 
+		padding: 10px; 
+		/*box-sizing: border-box; border-radius: 10px 10px 0;*/
+ 		background-color: grey; color: #FFFFFF;
+ 		text-align: center;
+ 		animation: quand;
+		animation-delay: 6s;
+		animation-duration: 4s;
+		background-position: 360px;
+ 		}
+ .box5 { 
+		width: 28%; 
+		margin: 1% 2.3% 2% 1%; /*box-shadow: 2px 2px 20px #000;*/ 
+		padding: 10px; 
+		/*box-sizing: border-box; border-radius: 10px 10px 0;*/
+ 		background-color: grey; color: #FFFFFF;
+ 		text-align: center;
+ 		animation: quand;
+		animation-delay: 8s;
+		animation-duration: 4s;
+		background-position: 360px;
+ 		}
+ .box6 { 
+		width: 28%; 
+		margin: 1% 2.3% 2% 1%; /*box-shadow: 2px 2px 20px #000;*/ 
+		padding: 10px; 
+		background-color: grey;
+		/*box-sizing: border-box; border-radius: 10px 10px 0;*/
+ 		color: #FFFFFF;
+ 		text-align: center;
+ 		animation: quand;
+		animation-delay: 10s;
+		animation-duration: 4s;
+		background-position: 360px;
+ 		}
 
 #special{ 
 		display: flex;
@@ -152,16 +215,10 @@ section h1{
 .sug h1{
 	color: yellow;
 }
-#form1 {
-	font-size: 17px;
-	width: 80%;
-	display: flex;
-	justify-content: center;
+.form-group {
 	color: #FFFFFF;
-	margin: 10%;
-
+	margin: 2%;
 }
-
 
 .resp {
 	text-align: center;
@@ -176,6 +233,27 @@ footer {
 	position: relative;
 	bottom: 0px;
 }
+.tuba{ 
+	width: 50px;
+	bottom: 0%;
+	right: -5%;
+	animation-name: tuba;
+	animation-duration: 6s;
+	animation-delay: 3.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	}
+.tubon{ 
+	width: 50px;
+	bottom: 40%;
+	right: 90%;
+	animation-name: tubon;
+	animation-duration: 6s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	}
+.tuba, .tubon {position: absolute;}
 /*Media Queries handheld solamente para disp portatiles{}*/
 /*la de aca es para la pantalla MAS grande*/
 @media screen and (min-width: 1201px) and (max-width: 1200px) {
@@ -198,5 +276,5 @@ footer {
  {
 	body {background: #000000;}
 	#contenedor{flex-wrap: wrap;}/*se puede hacer con flex-direction:column o display:block*/
-	.box {width: 100%;}
+	.box1, .box2, .box3, .box4, .box5, .box6 {width: 100%;}
 }
