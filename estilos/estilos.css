@@ -162,6 +162,11 @@ section h1{
 	margin: 10%;
 
 }
+
+.resp {
+	text-align: center;
+	margin: 50px;
+}
 footer {
 	padding: 12px;
 	display: flex;
