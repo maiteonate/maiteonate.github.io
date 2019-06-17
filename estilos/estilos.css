@@ -153,14 +153,15 @@ section h1{
 	color: yellow;
 }
 #form1 {
-	font-size: 16px;
-	width: 60%;
+	font-size: 17px;
+	width: 80%;
 	display: flex;
 	justify-content: center;
 	color: #FFFFFF;
 	margin: 10%;
 
 }
+
 
 .resp {
 	text-align: center;
@@ -174,6 +175,28 @@ footer {
 	color:#FFFFFF;
 	position: relative;
 	bottom: 0px;
+}
+/*Media Queries handheld solamente para disp portatiles{}*/
+/*la de aca es para la pantalla MAS grande*/
+@media screen and (min-width: 1201px) and (max-width: 1200px) {
+	body {background: #000000;}
+}
+/*la de aca es para la pantalla grande*/
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+	body {background: #000000;}
+}
+/*la de aca es para la pantalla mediana*/
+@media (min-width: 600px)  and (max-width: 990px)
+ {
+	body {background: #000000;}
+	#contenedor {flex-wrap: wrap;}
+	.box {width: 100%}
 
-
+}
+/*la de aca es para la pantalla pequeña*/
+@media (min-width: 0px)  and (max-width: 599px)
+ {
+	body {background: #000000;}
+	#contenedor{flex-wrap: wrap;}/*se puede hacer con flex-direction:column o display:block*/
+	.box {width: 100%;}
 }
