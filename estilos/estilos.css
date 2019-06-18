@@ -276,5 +276,5 @@ footer {
  {
 	body {background: #000000;}
 	#contenedor{flex-wrap: wrap;}/*se puede hacer con flex-direction:column o display:block*/
-	.box1, .box2, .box3, .box4, .box5 {width: 100%;}
+	.box1, .box2, .box3, .box4, .box5, .box6 {width: 100%;}
 }
