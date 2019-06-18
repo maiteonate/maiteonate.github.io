@@ -1,6 +1,13 @@
 @charset "UTF-8";
 /* CSS Document */
-22
+@keyframes tuba {
+		0% {transform: translate(-1200px);}
+		100% {transform: translate(1200px);}
+}
+@keyframes tubon {
+		0% {transform: translate(1200px);}
+		100% {transform: translate(-1200px);}
+}
 @keyframes quand {
 		0% {opacity: 0;}
 		100% {opacity: 1;}
@@ -269,5 +276,5 @@ footer {
  {
 	body {background: #000000;}
 	#contenedor{flex-wrap: wrap;}/*se puede hacer con flex-direction:column o display:block*/
-	.box1, .box2, .box3, .box4, .box5, .box6 {width: 100%;}
+	.box1, .box2, .box3, .box4, .box5 {width: 100%;}
 }
