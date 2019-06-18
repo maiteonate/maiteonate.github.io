@@ -69,9 +69,8 @@ section .textop{
 }
 .box1 { 
 		width: 28%; 
-		margin: 1% 2.3% 2% 1%; /*box-shadow: 2px 2px 20px #000;*/ 
+		margin: 1% 2.3% 2% 1%;
 		padding: 10px; 
-		/*box-sizing: border-box; border-radius: 10px 10px 0;*/
  		background-color: grey; color: #FFFFFF;
  		text-align: center;
  		animation: quand;
@@ -81,9 +80,8 @@ section .textop{
  		}
  .box2 { 
 		width: 28%; 
-		margin: 1% 2.3% 2% 1%; /*box-shadow: 2px 2px 20px #000;*/ 
+		margin: 1% 2.3% 2% 1%;  
 		padding: 10px; 
-		/*box-sizing: border-box; border-radius: 10px 10px 0;*/
  		background-color: grey; color: #FFFFFF;
  		text-align: center;
  		animation: quand;
@@ -93,9 +91,8 @@ section .textop{
  		}
  .box3 { 
 		width: 28%; 
-		margin: 1% 2.3% 2% 1%; /*box-shadow: 2px 2px 20px #000;*/ 
+		margin: 1% 2.3% 2% 1%;  
 		padding: 10px; 
-		/*box-sizing: border-box; border-radius: 10px 10px 0;*/
  		background-color: grey; color: #FFFFFF;
  		text-align: center;
  		animation: quand;
@@ -105,9 +102,8 @@ section .textop{
  		}
  .box4 { 
 		width: 28%; 
-		margin: 1% 2.3% 2% 1%; /*box-shadow: 2px 2px 20px #000;*/ 
+		margin: 1% 2.3% 2% 1%;  
 		padding: 10px; 
-		/*box-sizing: border-box; border-radius: 10px 10px 0;*/
  		background-color: grey; color: #FFFFFF;
  		text-align: center;
  		animation: quand;
@@ -117,9 +113,8 @@ section .textop{
  		}
  .box5 { 
 		width: 28%; 
-		margin: 1% 2.3% 2% 1%; /*box-shadow: 2px 2px 20px #000;*/ 
+		margin: 1% 2.3% 2% 1%; 
 		padding: 10px; 
-		/*box-sizing: border-box; border-radius: 10px 10px 0;*/
  		background-color: grey; color: #FFFFFF;
  		text-align: center;
  		animation: quand;
@@ -129,10 +124,9 @@ section .textop{
  		}
  .box6 { 
 		width: 28%; 
-		margin: 1% 2.3% 2% 1%; /*box-shadow: 2px 2px 20px #000;*/ 
+		margin: 1% 2.3% 2% 1%;  
 		padding: 10px; 
 		background-color: grey;
-		/*box-sizing: border-box; border-radius: 10px 10px 0;*/
  		color: #FFFFFF;
  		text-align: center;
  		animation: quand;
@@ -254,6 +248,7 @@ footer {
 	animation-timing-function: linear;
 	}
 .tuba, .tubon {position: absolute;}
+
 /*Media Queries handheld solamente para disp portatiles{}*/
 /*la de aca es para la pantalla MAS grande*/
 @media screen and (min-width: 1201px) and (max-width: 1200px) {
