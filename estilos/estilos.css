@@ -229,7 +229,7 @@ footer {
 }
 .tuba{ 
 	width: 50px;
-	bottom: 10%;
+	bottom: 0%;
 	right: -5%;
 	animation-name: tuba;
 	animation-duration: 6s;
@@ -239,7 +239,7 @@ footer {
 	}
 .tubon{ 
 	width: 50px;
-	bottom: 40%;
+	bottom: 50%;
 	right: 90%;
 	animation-name: tubon;
 	animation-duration: 6s;
