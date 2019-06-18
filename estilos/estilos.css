@@ -1,13 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-@keyframes tuba {
-		0% {transform: translate(-1200px);}
-		100% {transform: translate(1200px);}
-}
-@keyframes tubon {
-		0% {transform: translate(1200px);}
-		100% {transform: translate(-1200px);}
-}
+22
 @keyframes quand {
 		0% {opacity: 0;}
 		100% {opacity: 1;}
