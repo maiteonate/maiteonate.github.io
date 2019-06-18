@@ -229,7 +229,7 @@ footer {
 }
 .tuba{ 
 	width: 50px;
-	bottom: 0%;
+	bottom: 10%;
 	right: -5%;
 	animation-name: tuba;
 	animation-duration: 6s;
