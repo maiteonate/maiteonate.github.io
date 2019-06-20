@@ -12,6 +12,16 @@
 		0% {opacity: 0;}
 		100% {opacity: 1;}
 }
+@keyframes contenedor {
+	0%{ 
+		opacity: 0;
+		transform: translateY(-20px);
+
+	}
+	80%{
+		opacity: 1;
+		transform: translateY(10px);
+	}}
 *{margin: 0; padding: 0;}
 body {font-family:Arial, "sans-serif"; line-height: 1.4;background-color:#000000;}	
 
@@ -38,6 +48,10 @@ nav ul li a:hover {
 	background-color:yellow;
 	color:#000000;
 	text-decoration: none;	
+	animation-name: contenedor;
+	animation-iteration-count: 2;
+	animation-duration: 3s;
+	animation-delay: 0s;
 }
 .intro {
 	padding-top: 170px;
@@ -239,7 +253,7 @@ footer {
 	}
 .tubon{ 
 	width: 50px;
-	bottom: 50%;
+	bottom: 0%;
 	right: 90%;
 	animation-name: tubon;
 	animation-duration: 6s;
